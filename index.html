@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loader.css">
+    <!-- Slick CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+    
+    <style>
+        body {
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+           background-color: #f8f8f8;
+           /* background-image: url('img/bg.png'); */
+         
+        }
+
+        #main{
+            max-width: 1200px;
+            
+            /* background-color: #fff; */
+            margin-left: auto;
+            margin-right: auto;
+            display: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            padding: 15px;
+            /* background-color: #fff; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .slider .slick-slide {
+            /* border: solid 1px #000; */
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .slider .slick-slide img {
+            width: 100%;
+        }
+
+        /* make button larger and change their positions */
+        .slick-prev, .slick-next {
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+        }
+        .slick-prev {
+            left: 5px;
+        }
+        .slick-next {
+            right: 5px;
+        }
+        .slick-prev:before, 
+        .slick-next:before {
+            font-size: 40px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
+        /* move dotted nav position */
+        .slick-dots {
+            bottom: 15px;
+        }
+        /* enlarge dots and change their colors */
+        .slick-dots li button:before {
+            font-size: 12px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 1;
+        }
+        .slick-dots li.slick-active button:before {
+            color: #dedede;
+        }
+
+        #landing{
+            background-image: url('/img/bg2.png');
+            margin-left: -30px;
+            height: 720px;
+            border:1px solid transparent;
+            margin-top: 20px;
+            
+          
+        }
+
+        .landing-name{
+            margin-left: 320px;
+            margin-top: 50px;
+            
+           
+        }
+
+        li{
+            list-style: none;
+            margin-top: 14px;
+            font-family: 'Handlee', cursive;
+            font-size: large;
+            /* font-weight: 500; */
+        }
+
+        li a{
+            font-weight: 500;
+        }
+
+        .kelompok{
+            font-family: 'Handlee', cursive;
+            font-size: 1.5em;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+            font-weight: 500;
+            /* color: #543829; */
+        }
+
+        
+.tt{
+    
+            text-align: center;
+            padding-top: 5em;
+            color: #543829;
+}
+        #type{
+           
+            
+            font-size: 1em;
+            
+            font-family: 'Handlee', cursive;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+        #typed1{
+           
+            font-size: 2em;
+            
+            font-family: 'Handlee', cursive;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        .container h1 {
+            position: absolute;
+            writing-mode: vertical-lr;
+            
+            height: 22em;
+            left: 1em;
+            text-align: center;
+            letter-spacing: 3px;
+            background-color: #943130;
+            color: #fff;
+            box-sizing: border-box;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 28px;
+            transform: rotate(180deg);
+            border-radius: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container h2 {
+            border-radius: 7px;
+            position: absolute;
+            writing-mode: vertical-rl;
+            display: inline;
+            height: 22em;
+            right: 1em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 3px;
+            background-color: #943130;
+            color: #fff;
+            box-sizing: border-box;
+         text-align: center;
+            font-size: 28px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div id="head-container">
+        <div class="container2">
+            <div class="content">
+            <h2 class="frame-1">Assalamu'alaikum</h2>
+            <h2 class="frame-2">Selamat datang </h2>
+            <h2 class="frame-3">di project kami</h2>
+            <h2 class="frame-4">Nama kelompok :</h2>
+            <h2 class="frame-5">
+                <span>Yovie Ferdianto</span> 
+                <br>
+                <span>Muh. Ainun Yanuarsyam</span> 
+                <br>
+                <span>Ridofas Tri Sandi</span>
+            </h2>
+            </div>
+        </div>
+    </div>
+    
+    <div id="container1">
+    <div id="nav" >
+        <a href="#landing">Home</a>
+        <a href="#main">Slider Image</a>
+        <a href="#card1">Card Image</a>
+        
+    </div>
+    <div id="landing">
+        <div class="tt">
+        <p id="typed1" >Tugas Pemrogaman Web</p>
+        <h1><span id="type" ></span></h1>
+    </div>
+        <div class="landing-name">
+            <p class="kelompok"> Nama Kelompok :</p>
+            <ul>
+                <li>Yovie Ferdianto (20562020003)</li>
+                <li>Ridofas Tri Sandi (20562020023)</li>
+                <li>Muh Ainun Yanuar Syam (20562020015)</li>
+            </ul>
+        </div>
+       </div>
+       
+              
+           
+      
+       <div id="main" >
+    <div class="container" >
+        <h3 style="text-align: center; margin-bottom:15px; margin-top: 25px;color: #fff;"></h3>
+        <h1 > SLIDER IMAGE - IMAGE SLIDER </h1>
+        <h2 > SLIDER IMAGE - IMAGE SLIDER </h2>
+        <div class="slider" 
+        >
+            <div>
+                <a href="#">
+                    <img src="img/bryan-pelayo-GD_ETGamDTs-unsplash.jpg" alt="Image 1">
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/unsplash-NuFUbftUu_s-unsplash.jpg" alt="Image 2">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/microsoft-edge-LXjbmtqn6lg-unsplash.jpg" alt="Image 3">
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/windows-C6T6vr1sQI0-unsplash.jpg" alt="Image 4">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/xps-yNvVnPcurD8-unsplash.jpg" alt="Image 5">
+                </a>            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="card1" >
+  
+   <h2 style="text-align:center ; color: black; font-weight: bolder; margin-bottom: -15px;" 
+   >Card Image</h2>
+   
+<div id="cek2" ></div>
+</div>
+</div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+   <script>
+    new Typed('#type',{
+strings : ['Menampilkan Gambar^1500'],
+typeSpeed : 100,
+loop : true,
+cursorChar: '_',
+});
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+ <!-- Slick JS -->    
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
+
+
+ <script>
+const a = document.getElementById("head-container");
+const b = document.getElementById("cek2");
+const ainun = document.getElementById("main");
+const typed = document.getElementById("typed");
+const typed1 = document.getElementById("typed1");
+    const timer = setTimeout(() =>{
+        a.style.display = "none"
+        ainun.style.display = "block"
+        typed.style.display = "block"
+        typed1.style.display = "block"         
+    },0100)
+    let file = "https://api.themoviedb.org/3/movie/upcoming?api_key=e8dfd2bbed47c2bb916bc9b14367e201&language=en-US&page=1"
+    async function fetchText() {
+        let response = await fetch(file);
+        let data = await response.json();
+        const hasil = data.results
+        const s = hasil.map(i => 
+        "<div class='card' data-aos='zoom-out-up' data-aos-delay='300' data-aos-duration='2000' ><img src='https://image.tmdb.org/t/p/w500/" +
+        `${i.poster_path}`+ "'/><br><br><h3>"+ `${i.title}`+ "</h3><br></div>"
+        )
+        b.innerHTML = s}
+        fetchText();
+</script>
+
+
+ <!-- Our Script -->
+ <script>
+     $(document).ready(function(){
+         $('.slider').slick({
+             autoplay: true,
+             autoplaySpeed: 2500,
+             dots: true,
+             fade:true,
+             
+         });
+     });
+ </script>
+
+  </body>
+</body>
+</html>
