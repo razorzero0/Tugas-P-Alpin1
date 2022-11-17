@@ -220,8 +220,12 @@ text-decoration: underline;
          font-size: larger;
         }
 
-            .landing-name{
-          margin-left: -125px;
+             .landing-name{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        
+          margin: 70px 100px;
                   }
 
           .container h1{
@@ -232,9 +236,17 @@ text-decoration: underline;
             display: none;
             opacity: 0;
 }
-
 .card{
-  width: 300px;
+  width: 150px;
+  
+}
+
+#cek2{
+width: 400px;
+margin-left: 0px;
+margin-right: 0px;
+
+
 }
 #card1 h2{
   display: block;
